@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/yosualb/golang-course/package/string"
+	"github.com/yosualb/gocourse/package/string"
 )
 
 func main() {
