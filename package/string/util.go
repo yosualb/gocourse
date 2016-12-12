@@ -5,11 +5,11 @@ import (
 )
 
 // Unexported function
-func addPrefix(s string) string {
+func addNamePrefix(s string) string {
 	var buff bytes.Buffer
 
-	buff.WriteString("Prefix + ")
 	buff.WriteString(s)
+	buff.WriteString(Name)
 
 	return buff.String()
 }

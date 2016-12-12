@@ -1,6 +1,6 @@
 package string
 
 // Exported function
-func AddPrefix(s string) string {
-	return addPrefix(s)
+func AddNamePrefix(s string) string {
+	return addNamePrefix(s)
 }
