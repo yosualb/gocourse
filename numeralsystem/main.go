@@ -4,26 +4,26 @@ import "fmt"
 
 func main() {
 	// Decimal
-	fmt.Println(65)
+	fmt.Println("decimal:", 65)
 
 	// Binary
-	fmt.Printf("%b\n", 65)
+	fmt.Printf("binary: %b\n", 65)
 
 	// Octa-decimal
-	fmt.Printf("%o\n", 65)
+	fmt.Printf("octa-decimal: %o\n", 65)
 
 	// Hexa-decimal
-	fmt.Printf("%x\n", 65)
+	fmt.Printf("hexa-decimal: %x\n", 65)
 
 	// UTF-8 symbol
-	fmt.Printf("%U\n", 65)
+	fmt.Printf("utf-8 symbol: %U\n", 65)
 
 	// UTF-8 character
-	fmt.Printf("%c\n", 65)
+	fmt.Printf("utf-8 character: %c\n", 65)
 
 	// UTF-8 character (escaped)
-	fmt.Printf("%q\n", 65)
+	fmt.Printf("utf-8 character (escaped): %q\n", 65)
 
 	// UTF-8 code
-	fmt.Println('A')
+	fmt.Println("utf-8 code:", 'A')
 }

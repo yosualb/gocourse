@@ -9,7 +9,7 @@ func result(x int) int {
 func main() {
 	// Variable shadowing
 	result := result(2)
-	fmt.Println(result)
+	fmt.Println("result:", result)
 
 	// Error, function result is overshadowed by variable result
 	// result = result(3)

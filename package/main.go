@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(string.AddNamePrefix("Mr. "))
-	fmt.Println(string.Name)
+	fmt.Println("string.AddNamePrefix(\"Mr. \"):", string.AddNamePrefix("Mr. "))
+	fmt.Println("string.Name:", string.Name)
 }

@@ -12,10 +12,10 @@ func number(x int) func() int {
 
 func main() {
 	add := number(1)
-	fmt.Println(add())
-	fmt.Println(add())
+	fmt.Println("add():", add())
+	fmt.Println("add():", add())
 
-	// Anonymous function-level closure
+	// Anonymous-function-level closure
 	number2 := func(x int) func() int {
 		return func() int {
 			x++
@@ -24,6 +24,6 @@ func main() {
 	}
 
 	add2 := number2(1)
-	fmt.Println(add2())
-	fmt.Println(add2())
+	fmt.Println("add2():", add2())
+	fmt.Println("add2():", add2())
 }

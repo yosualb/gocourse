@@ -12,15 +12,15 @@ func main() {
 	// Initialized variable
 	var k int = 10
 
-	// Multi-variable
+	// Multiple variable
 	var (
 		l int    = 10
 		m string = "A"
 	)
 
-	fmt.Println(i)
-	fmt.Println(j)
-	fmt.Println(k)
-	fmt.Println(l)
-	fmt.Println(m)
+	fmt.Println("i:", i)
+	fmt.Println("j:", j)
+	fmt.Println("k:", k)
+	fmt.Println("l:", l)
+	fmt.Println("m:", m)
 }
