@@ -8,8 +8,12 @@ import (
 func addNamePrefix(s string) string {
 	var buff bytes.Buffer
 
-	buff.WriteString(s)
-	buff.WriteString(Name)
+	if _, err := buff.WriteString(s); err != nil {
+		return buff.String()
+	}
+	if _, err := buff.WriteString(Name); err != nil {
+		return buff.String()
+	}
 
 	return buff.String()
 }

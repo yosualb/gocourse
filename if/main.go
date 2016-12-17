@@ -11,18 +11,18 @@ func main() {
 
 	// If-else statement
 	if i > 0 {
-		fmt.Println("A")
+		fmt.Println("i is greater than 0")
 	} else {
-		fmt.Println("B")
+		fmt.Println("i is less than or equal 0")
 	}
 
 	// If-elseif-else statement
 	if i > 0 {
-		fmt.Println("A")
+		fmt.Println("i is greater than 0")
 	} else if i < 0 {
-		fmt.Println("B")
+		fmt.Println("i is less than 0")
 	} else {
-		fmt.Println("C")
+		fmt.Println("i is equal 0")
 	}
 
 	// Variable declaration

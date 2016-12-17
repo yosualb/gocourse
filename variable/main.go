@@ -14,8 +14,8 @@ func main() {
 
 	// Multiple variable
 	var (
-		l int    = 10
-		m string = "A"
+		l int64   = 10
+		m float64 = 12.5
 	)
 
 	fmt.Println("i:", i)

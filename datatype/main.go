@@ -1,6 +1,7 @@
 package main
 
 import "fmt"
+import "reflect"
 
 func main() {
 	// Generic integer
@@ -60,23 +61,23 @@ func main() {
 	// String
 	var s string = "A"
 
-	fmt.Println("int:", a)
-	fmt.Println("int8:", b)
-	fmt.Println("int16:", c)
-	fmt.Println("int32:", d)
-	fmt.Println("int64:", e)
-	fmt.Println("uint:", f)
-	fmt.Println("uint8:", g)
-	fmt.Println("uint16:", h)
-	fmt.Println("uint32:", i)
-	fmt.Println("uint64:", j)
-	fmt.Println("float32:", k)
-	fmt.Println("float64:", l)
-	fmt.Println("complex64:", m)
-	fmt.Println("complex128:", n)
-	fmt.Println("rune:", o)
-	fmt.Println("byte:", p)
-	fmt.Println("uintptr:", q)
-	fmt.Println("bool:", r)
-	fmt.Println("string:", s)
+	fmt.Println("a:", reflect.TypeOf(a))
+	fmt.Println("b:", reflect.TypeOf(b))
+	fmt.Println("c:", reflect.TypeOf(c))
+	fmt.Println("d:", reflect.TypeOf(d))
+	fmt.Println("e:", reflect.TypeOf(e))
+	fmt.Println("f:", reflect.TypeOf(f))
+	fmt.Println("g:", reflect.TypeOf(g))
+	fmt.Println("h:", reflect.TypeOf(h))
+	fmt.Println("i:", reflect.TypeOf(i))
+	fmt.Println("j:", reflect.TypeOf(j))
+	fmt.Println("k:", reflect.TypeOf(k))
+	fmt.Println("l:", reflect.TypeOf(l))
+	fmt.Println("m:", reflect.TypeOf(m))
+	fmt.Println("n:", reflect.TypeOf(n))
+	fmt.Println("o:", reflect.TypeOf(o))
+	fmt.Println("p:", reflect.TypeOf(p))
+	fmt.Println("q:", reflect.TypeOf(q))
+	fmt.Println("r:", reflect.TypeOf(r))
+	fmt.Println("s:", reflect.TypeOf(s))
 }

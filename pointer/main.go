@@ -8,10 +8,10 @@ func zero(x *int) {
 }
 
 func main() {
-	var i int = 10
+	i := 10
 
-	// Pointer variable that assigned variable i's memory address
-	var j *int = &i
+	// Pointer variable that assigned by variable i's memory address
+	j := &i
 
 	// Reference to the assigned memory address's value and change it
 	*j = 11

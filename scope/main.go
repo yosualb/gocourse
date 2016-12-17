@@ -7,11 +7,11 @@ var i int = 10
 
 func main() {
 	// Function-level scope variable
-	var j int = 11
+	j := 11
 
 	{
 		// Inner-function-level scope variable
-		var k int = 12
+		k := 12
 		fmt.Println("k:", k)
 	}
 

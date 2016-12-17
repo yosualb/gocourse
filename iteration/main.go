@@ -38,7 +38,7 @@ func main() {
 		fmt.Println("i:", i)
 	}
 
-	var r []rune = []rune("Hello World")
+	r := []rune("Hello World")
 	// Range keyword can create loop for array, slice, string, or map, or reading from a channel
 	for key, val := range r {
 		fmt.Println("key:", key, "val:", val)

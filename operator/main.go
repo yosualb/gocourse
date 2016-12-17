@@ -5,37 +5,37 @@ import "fmt"
 func main() {
 	// Arithmetic operator
 	// - Sum
-	fmt.Println("1+1:", 1+1)
+	fmt.Println("1+2:", 1+2)
 
 	// - Difference
-	fmt.Println("1-1:", 1-1)
+	fmt.Println("1-2:", 1-2)
 
 	// - Product
-	fmt.Println("1*1:", 1*1)
+	fmt.Println("1*2:", 1*2)
 
 	// - Quotient
-	fmt.Println("1/1:", 1/1)
+	fmt.Println("1/2:", 1/2)
 
 	// - Remainder
-	fmt.Println("1%1:", 1%1)
+	fmt.Println("1%2:", 1%2)
 
 	// - Bitwise AND
-	fmt.Println("1&1:", 1&1)
+	fmt.Println("1&2:", 1&2)
 
 	// - Bitwise OR
-	fmt.Println("1|1:", 1|1)
+	fmt.Println("1|2:", 1|2)
 
 	// - Bitwise XOR
-	fmt.Println("1^1:", 1^1)
+	fmt.Println("1^2:", 1^2)
 
 	// - Bit clear AND NOT
-	fmt.Println("1&^1:", 1&^1)
+	fmt.Println("1&^2:", 1&^2)
 
 	// - Left shift
-	fmt.Println("1<<1:", 1<<1)
+	fmt.Println("1<<2:", 1<<2)
 
 	// - Right shift
-	fmt.Println("1>>1:", 1>>1)
+	fmt.Println("1>>2:", 1>>2)
 
 	// Unary operator
 	// - Positive number
@@ -49,22 +49,22 @@ func main() {
 
 	// Comparison operator
 	// - Equal
-	fmt.Println("1 == 1:", 1 == 1)
+	fmt.Println("1 == 2:", 1 == 2)
 
 	// - Not equal
-	fmt.Println("1 != 1:", 1 != 1)
+	fmt.Println("1 != 2:", 1 != 2)
 
 	// - Less
-	fmt.Println("1 < 1:", 1 < 1)
+	fmt.Println("1 < 2:", 1 < 2)
 
 	// - Less or equal
-	fmt.Println("1 <= 1:", 1 <= 1)
+	fmt.Println("1 <= 2:", 1 <= 2)
 
 	// - Greater
-	fmt.Println("1 > 1:", 1 > 1)
+	fmt.Println("1 > 2:", 1 > 2)
 
 	// - Greater or equal
-	fmt.Println("1 >= 1:", 1 >= 1)
+	fmt.Println("1 >= 2:", 1 >= 2)
 
 	// Logical operator
 	// - AND
@@ -77,8 +77,8 @@ func main() {
 	fmt.Println("!true:", !true)
 
 	// Address operator
-	var x int = 10
-	var y *int = &x
+	x := 10
+	y := &x
 	fmt.Println("x:", x)
 	fmt.Println("&x:", &x)
 	fmt.Println("y:", y)
@@ -92,54 +92,54 @@ func main() {
 	fmt.Println("c:", <-c)
 
 	// Assignment operator
-	var i int = 1
+	i := 1
 
 	// - Addition
-	i += 1
+	i += 2
 	fmt.Println("i:", i)
 
 	// - Substraction
-	i -= 1
+	i -= 2
 	fmt.Println("i:", i)
 
 	// - Multiplication
-	i *= 1
+	i *= 2
 	fmt.Println("i:", i)
 
 	// - Division
-	i /= 1
+	i /= 2
 	fmt.Println("i:", i)
 
 	// - Remainder
-	i %= 1
+	i %= 2
 	fmt.Println("i:", i)
 
 	// - Bitwise AND
-	i &= 1
+	i &= 2
 	fmt.Println("i:", i)
 
 	// - Bitwise OR
-	i |= 1
+	i |= 2
 	fmt.Println("i:", i)
 
 	// - Bitwise XOR
-	i ^= 1
+	i ^= 2
 	fmt.Println("i:", i)
 
 	// - Left shift
-	i <<= 1
+	i <<= 2
 	fmt.Println("i:", i)
 
 	// - Right shift
-	i >>= 1
+	i >>= 2
 	fmt.Println("i:", i)
 
 	// - Bit clear AND NOT
-	i &^= 1
+	i &^= 2
 	fmt.Println("i:", i)
 
 	// IncDec operator
-	var j int = 1
+	j := 1
 
 	// - Increment
 	j++

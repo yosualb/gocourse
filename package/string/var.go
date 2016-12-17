@@ -1,4 +1,4 @@
 package string
 
-// Global Variable
+// Exported package-level variable
 var Name string = "Yosua"
