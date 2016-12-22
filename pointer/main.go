@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// Pass memory address to function
+// Pass memory address
 func zero(x *int) {
 	*x = 0
 }
@@ -10,10 +10,10 @@ func zero(x *int) {
 func main() {
 	i := 10
 
-	// Pointer variable that assigned by variable i's memory address
+	// Variable memory address
 	j := &i
 
-	// Reference to the assigned memory address's value and change it
+	// Change memory address's value
 	*j = 11
 
 	fmt.Println("i:", i)

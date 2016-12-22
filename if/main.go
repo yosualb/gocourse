@@ -16,7 +16,7 @@ func main() {
 		fmt.Println("i is less than or equal 0")
 	}
 
-	// If-elseif-else statement
+	// If-else-if-else statement
 	if i > 0 {
 		fmt.Println("i is greater than 0")
 	} else if i < 0 {

@@ -8,7 +8,7 @@ func main() {
 
 	fmt.Println("v:", v, "len(v):", len(v), "cap(v):", cap(v))
 
-	// Zero value of slice with selected length
+	// Zero value of slice with selected same length and capacity
 	x := make([]int, 3)
 
 	fmt.Println("x:", x, "len(x):", len(x), "cap(x):", cap(x))

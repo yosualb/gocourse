@@ -30,6 +30,12 @@ func talk(ss ...string) string {
 	return "Hi " + names
 }
 
+// Function with named return value
+func greeting() (greeting string) {
+	greeting = "Hello World"
+	return
+}
+
 func main() {
 	hi()
 	fmt.Println("greet():", greet())
@@ -51,4 +57,6 @@ func main() {
 	func() {
 		fmt.Println("Hello World")
 	}()
+
+	fmt.Println("greeting():", greeting())
 }

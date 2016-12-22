@@ -6,7 +6,7 @@ func formattedPrint(s string) {
 	fmt.Println("Hello my name is", s)
 }
 
-// Function that calls callback function
+// Function that contains callback function
 func printName(callback func(string), ss ...string) {
 	for _, val := range ss {
 		callback(val)
