@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func main() {
+	// Nil slice
+	var u []string
+
+	fmt.Println("u == nil:", u == nil)
+
 	// Initialized slice's value
 	v := []int{1, 2, 3}
 

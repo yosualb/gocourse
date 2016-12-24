@@ -3,20 +3,35 @@ package main
 import "fmt"
 
 func main() {
+	// Nil map
+	var a map[string]int
+
+	fmt.Println("a == nil:", a == nil)
+
 	// Initialized map's value
-	c := map[string]int{
+	b := map[string]int{
 		"zero": 0,
 	}
 
-	fmt.Println("c:", c)
+	fmt.Println("b:", b)
 
 	// Zero value of map
-	d := make(map[string]int)
+	c := make(map[string]int)
+
+	fmt.Println("c:", c)
+
+	// Zero value of map with selected length of hint
+	d := make(map[string]int, 10)
 
 	fmt.Println("d:", d)
 
 	// Set map's key and value
 	d["one"] = 1
+
+	fmt.Println("d:", d)
+
+	// Delete map's key and value
+	delete(d, "one")
 
 	fmt.Println("d:", d)
 
@@ -40,4 +55,9 @@ func main() {
 	}
 
 	fmt.Println("e:", e)
+
+	// Range keyword
+	for key, val := range e {
+		fmt.Println("key:", key, "val:", val)
+	}
 }
