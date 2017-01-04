@@ -6,7 +6,7 @@ func panicTest() {
 	defer func() {
 		// Recover
 		rec := recover()
-		fmt.Println(rec)
+		fmt.Println("rec:", rec)
 		fmt.Println("After recover")
 	}()
 

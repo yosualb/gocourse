@@ -14,6 +14,7 @@ func printName(callback func(string), ss ...string) {
 }
 
 func main() {
+	// Call function that contains callback function
 	printName(formattedPrint, "Yosua", "James", "Ben")
 	printName(func(s string) {
 		fmt.Println("Hi", s)

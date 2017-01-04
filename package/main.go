@@ -3,10 +3,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/yosualb/gocourse/package/string"
+	// Package alias
+	s "github.com/yosualb/gocourse/package/string"
 )
 
 func main() {
-	fmt.Println("string.AddNamePrefix(\"Mr. \"):", string.AddNamePrefix("Mr. "))
-	fmt.Println("string.Name:", string.Name)
+	// Call package method
+	fmt.Println("string.AddNamePrefix(\"Mr. \"):", s.AddNamePrefix("Mr. "))
+	// Call package variable
+	fmt.Println("string.Name:", s.Name)
 }
