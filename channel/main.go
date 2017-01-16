@@ -56,6 +56,26 @@ func main() {
 	supply(c1)
 	print(c1)
 
+	// Buffered channel
+	bc := make(chan string, 2)
+
+	go func() {
+		bc <- "A"
+		bc <- "B"
+		bc <- "C"
+		bc <- "D"
+		bc <- "E"
+	}()
+
+	go func() {
+		for {
+			if len(bc) > 1 {
+				fmt.Println("bc:", <-bc)
+				time.Sleep(1 * time.Second)
+			}
+		}
+	}()
+
 	var input string
 	fmt.Scanln(&input)
 }
