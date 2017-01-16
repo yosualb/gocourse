@@ -76,6 +76,22 @@ func main() {
 		}
 	}()
 
+	// Nested channel
+	nc := make(chan chan string)
+
+	go func() {
+		c := make(chan string)
+		nc <- c
+		fmt.Println("<-c:", <-c)
+	}()
+
+	go func() {
+		select {
+		case c := <-nc:
+			c <- "Done"
+		}
+	}()
+
 	var input string
 	fmt.Scanln(&input)
 }
